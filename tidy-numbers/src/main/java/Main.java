@@ -38,13 +38,15 @@ public class Main {
         StringBuilder sb = new StringBuilder("");
 
         for (int i = 0; i < testCases.size(); i++) {
+            if (i != 0) {
+                sb.append("\n");
+            }
             sb.append("Case #").append(i + 1).append(": ");
 
             Number number = testCases.get(i);
             String tidyNumber = "" + number.getLastTidyNumber();
 
             sb.append(tidyNumber);
-            sb.append("\n");
         }
 
         try {

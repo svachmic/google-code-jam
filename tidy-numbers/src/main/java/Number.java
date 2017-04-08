@@ -57,7 +57,8 @@ public class Number {
         for (int i = numberArray.length - 2; i > -1; i--) {
             char c = numberArray[i];
             if (c > tmp) {
-                long multiplicator = (long) Math.pow(10, i - 1);
+                int endIndex = (numberArray.length - 2) - i;
+                long multiplicator = (long) Math.pow(10, endIndex);
                 long subtract = ((long) (Character.getNumericValue(tmp) + 1) * multiplicator);
                 long newNumber = number - subtract;
 

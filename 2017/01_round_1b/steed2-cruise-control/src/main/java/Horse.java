@@ -26,4 +26,10 @@ public class Horse {
                 ", speed=" + speed +
                 '}';
     }
+
+    public double getTravelTime(int destination) {
+        double distance = (double) (destination - this.getPosition());
+        double time = distance / (double) this.getSpeed();
+        return time;
+    }
 }

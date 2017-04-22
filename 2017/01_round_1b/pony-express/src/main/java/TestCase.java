@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -43,6 +42,21 @@ public class TestCase {
                 sb.append(this.distances[i][j]).append(" ");
             }
             sb.append("\n");
+        }
+
+        return sb.toString();
+    }
+
+    private double shortestTime(int from, int to) {
+        return 0.0;
+    }
+
+    public String deliveryTimes() {
+        StringBuilder sb = new StringBuilder();
+
+        for (Delivery delivery : this.deliveries) {
+            double shortestTime = this.shortestTime(delivery.getStart() - 1, delivery.getEnd() - 1);
+            sb.append(shortestTime).append(" ");
         }
 
         return sb.toString();

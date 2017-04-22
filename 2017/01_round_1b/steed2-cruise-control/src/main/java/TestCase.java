@@ -32,4 +32,8 @@ public class TestCase {
                 ", horses=" + horses +
                 '}';
     }
+
+    public double getAverageSpeed() {
+        return 0.0;
+    }
 }

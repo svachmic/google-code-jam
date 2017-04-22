@@ -3,6 +3,7 @@ import java.io.FileReader;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by michalsvacha on 22.04.17.
@@ -52,7 +53,9 @@ public class Main {
             sb.append("Case #").append(i + 1).append(": ");
 
             TestCase testCase = testCases.get(i);
-            sb.append(testCase.getAverageSpeed());
+            String averageSpeed = String.format(Locale.US, "%.6f", testCase.getAverageSpeed());
+
+            sb.append(averageSpeed);
             sb.append("\n");
         }
 

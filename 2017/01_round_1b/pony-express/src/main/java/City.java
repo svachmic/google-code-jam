@@ -18,4 +18,12 @@ public class City {
                 ", averageHorseSpeed=" + averageHorseSpeed +
                 '}';
     }
+
+    public int getAverageHorseSpeed() {
+        return averageHorseSpeed;
+    }
+
+    public int getMaxHorseDistance() {
+        return maxHorseDistance;
+    }
 }

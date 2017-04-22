@@ -34,6 +34,13 @@ public class TestCase {
     }
 
     public double getAverageSpeed() {
-        return 0.0;
+        double travelTimeMax = 0;
+        for (Horse horse : this.getHorses()) {
+            double travelTime = horse.getTravelTime(this.getDistance());
+            travelTimeMax = travelTime > travelTimeMax ? travelTime : travelTimeMax;
+        }
+        double averageSpeed = (double) this.getDistance() / travelTimeMax;
+
+        return averageSpeed;
     }
 }

@@ -1,6 +1,7 @@
 /**
  * Created by michalsvacha on 22.04.17.
  */
+
 public class Delivery {
     private int start;
     private int end;

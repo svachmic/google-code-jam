@@ -57,7 +57,9 @@ public class Main {
             TestCase testCase = testCases.get(i);
             sb.append(testCase.getMaximumArea());
 
-            sb.append("\n");
+            if (i != testCases.size() - 1) {
+                sb.append("\n");
+            }
         }
 
         try {

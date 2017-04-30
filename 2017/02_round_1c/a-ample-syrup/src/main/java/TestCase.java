@@ -32,4 +32,8 @@ public class TestCase {
         Comparator comparator = Comparator.comparing(Pancake::getRadius).thenComparing(Pancake::getHeight);
         Collections.sort(pancakes, comparator.reversed());
     }
+
+    public double getMaximumArea() {
+        return 0.0;
+    }
 }

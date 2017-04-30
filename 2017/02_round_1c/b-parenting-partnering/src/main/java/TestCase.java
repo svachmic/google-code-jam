@@ -24,4 +24,8 @@ public class TestCase {
                 ", activitiesCameron=" + activitiesCameron +
                 '}';
     }
+
+    public int getMaximumExchangesCount() {
+        return 0;
+    }
 }

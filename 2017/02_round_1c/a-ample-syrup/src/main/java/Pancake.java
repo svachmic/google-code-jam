@@ -25,4 +25,12 @@ public class Pancake {
                 ", height=" + height +
                 '}';
     }
+
+    public double getSideArea() {
+        return (Math.PI * 2.0 * (double) this.getRadius() * this.getHeight());
+    }
+
+    public double getTopArea() {
+        return (Math.PI * Math.pow(this.getRadius(), 2.0));
+    }
 }

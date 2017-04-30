@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -6,7 +8,7 @@ import java.util.List;
  */
 public class TestCase {
     int pancakeCount, orderedCount;
-    List<Pancake> pancakes = new ArrayList<Pancake>();
+    List<Pancake> pancakes = new ArrayList<>();
 
     public TestCase(int pancakeCount, int orderedCount) {
         this.pancakeCount = pancakeCount;
@@ -24,5 +26,10 @@ public class TestCase {
                 ", orderedCount=" + orderedCount +
                 ", pancakes=" + pancakes +
                 "}\n";
+    }
+
+    public void sortPancakes() {
+        Comparator comparator = Comparator.comparing(Pancake::getRadius).thenComparing(Pancake::getHeight);
+        Collections.sort(pancakes, comparator.reversed());
     }
 }

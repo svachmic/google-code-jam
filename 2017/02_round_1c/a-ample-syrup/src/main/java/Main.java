@@ -38,6 +38,7 @@ public class Main {
                     testCase.addPancake(pancake);
                 }
 
+                testCase.sortPancakes();
                 testCases.add(testCase);
             }
         } catch (Exception e) {
